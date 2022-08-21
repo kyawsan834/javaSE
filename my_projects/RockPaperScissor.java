@@ -23,7 +23,7 @@ public class RockPaperScissor{
 
 		// method 3
 		// checking wrong input
-		if( !(personOne.equals("r"))&& !(personTwo.equals("r")) && !(personOne.equals("p"))&& !(personTwo.equals("P")) && !(personOne.equals("s"))&& !(personTwo.equals("S")) ){
+		if( !(personOne.equals("r"))&& !(personTwo.equals("r")) && !(personOne.equals("p"))&& !(personTwo.equals("p")) && !(personOne.equals("s"))&& !(personTwo.equals("s")) ){
 			System.out.println("invalid input");
 		}else{
 			rps.winner(personOne,personTwo);
@@ -127,36 +127,36 @@ public class RockPaperScissor{
 	// method 3
 	// =====================================================
 	// for winner and draw
-	
-	// void winner(String personOne, String personTwo){
-		
-	// 	if("r".equals(personOne) || "R".equals(personOne)){
-	// 		if("p".equals(personTwo) || "P".equals(personTwo)){
-	// 			System.out.println("Player Two Win");
-	// 		}else if("s".equals(personTwo) || "S".equals(personTwo)){
-	// 			System.out.println("Player One Win");
-	// 		}else{
-	// 			System.out.println("Draw");
-	// 		}
-	// 	}else if("p".equals(personOne) || "P".equals(personOne)){
-	// 		if("s".equals(personTwo) || "S".equals(personTwo)){
-	// 			System.out.println("Player Two Win");
-	// 		}else if("r".equals(personTwo) || "R".equals(personTwo)){
-	// 			System.out.println("Player One Win");
-	// 		}else{
-	// 			System.out.println("Draw");
-	// 		}
-	// 	}else if("s".equals(personOne) || "S".equals(personOne)){
-	// 		if("p".equals(personTwo) || "P".equals(personTwo)){
-	// 			System.out.println("Player One Win");
-	// 		}else if("r".equals(personTwo) || "R".equals(personTwo)){
-	// 			System.out.println("Player Two Win");
-	// 		}else{
-	// 			System.out.println("Draw");
-	// 		}
-	// 	}
 
-	// } 
+	void winner(String personOne, String personTwo){
+		
+		if("r".equals(personOne) || "R".equals(personOne)){
+			if("p".equals(personTwo) || "P".equals(personTwo)){
+				System.out.println("Player Two Win");
+			}else if("s".equals(personTwo) || "S".equals(personTwo)){
+				System.out.println("Player One Win");
+			}else{
+				System.out.println("Draw");
+			}
+		}else if("p".equals(personOne) || "P".equals(personOne)){
+			if("s".equals(personTwo) || "S".equals(personTwo)){
+				System.out.println("Player Two Win");
+			}else if("r".equals(personTwo) || "R".equals(personTwo)){
+				System.out.println("Player One Win");
+			}else{
+				System.out.println("Draw");
+			}
+		}else if("s".equals(personOne) || "S".equals(personOne)){
+			if("p".equals(personTwo) || "P".equals(personTwo)){
+				System.out.println("Player One Win");
+			}else if("r".equals(personTwo) || "R".equals(personTwo)){
+				System.out.println("Player Two Win");
+			}else{
+				System.out.println("Draw");
+			}
+		}
+
+	} 
 
 
 
