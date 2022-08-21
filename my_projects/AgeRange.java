@@ -8,14 +8,16 @@ class AgeRange{
 		int ageMin = Integer.parseInt(args[0]);
 		int ageMax = Integer.parseInt(args[0]);
 
-		if(ageMin<0 || ageMin>24 && ageMax<0 || ageMax>24){
-			System.out.println("Invalid age");
-		}else{
-			agerange.userOne(ageMin,ageMax);
-			agerange.userTwo(ageMin,ageMax);
+		if(!(ageMin == 7 || ageMax == 23) && (ageMin >=23 || ageMax<=100)){
 			agerange.userThree(ageMin,ageMax);
 			agerange.userFour(ageMin,ageMax);
 			agerange.userFive(ageMin,ageMax);
+		}else if(ageMin == 7 || ageMax == 23){
+			agerange.userOne(ageMin,ageMax);
+			agerange.userTwo(ageMin,ageMax);
+			
+		}else{
+			System.out.println("Wrong input");
 		}
 
 
@@ -25,7 +27,7 @@ class AgeRange{
 
 	}
 
-	void userOne(int ageMin[], int ageMax[]){
+	void userOne(int ageMin, int ageMax){
 		String arrUser[] = {"Hein Ko Ko","23","Yangon","heinko@gmail.com"};
 		for(int i = 0; i<arrUser.length; i++){
 			System.out.println("---------------");

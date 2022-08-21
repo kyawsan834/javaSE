@@ -19,5 +19,12 @@ class Reversing{
 		}
 
 		System.out.println(reverse);
+
+		// Not working
+		// for(int i >= 0; i<a.length()-1; i++){
+
+		// 		reverse = reverse + a.charAt(i);
+		// }
+		// System.out.println(reverse);
 	}
 }
